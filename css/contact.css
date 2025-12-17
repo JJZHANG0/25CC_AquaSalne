@@ -1,0 +1,305 @@
+/* Contact Page Styles */
+
+.page-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: var(--spacing-xl);
+    background: linear-gradient(180deg, #EFF6FF 0%, #FAFBFC 100%);
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-label {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--color-white);
+    color: var(--color-primary);
+    border-radius: var(--radius-xl);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: var(--spacing-sm);
+    border: 2px solid var(--color-border);
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-description {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-white);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.info-card {
+    background: var(--gradient-soft);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: var(--transition-base);
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.info-icon {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.info-card p {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* Fundraising Section */
+.fundraising-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--gradient-soft);
+}
+
+.fundraising-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.allocation-list {
+    margin-top: var(--spacing-md);
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.allocation-item {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-base);
+}
+
+.allocation-item:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+}
+
+.allocation-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+.allocation-desc h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.allocation-desc p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.investment-stats {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.stat-box {
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.stat-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+}
+
+.stat-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stat-box li {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+}
+
+.return-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.return-item:last-child {
+    border-bottom: none;
+}
+
+.return-item span {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+}
+
+.return-item strong {
+    font-size: 1.125rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Partnership Section */
+.partnership-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-white);
+}
+
+.partnership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.partnership-card {
+    background: var(--gradient-soft);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: var(--transition-base);
+}
+
+.partnership-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.partnership-icon {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.partnership-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.partnership-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--gradient-primary);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.cta-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-email {
+    margin-top: var(--spacing-md);
+}
+
+.email-link {
+    display: inline-block;
+    padding: 1.25rem 2.5rem;
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    transition: var(--transition-base);
+    box-shadow: var(--shadow-lg);
+}
+
+.email-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .fundraising-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-grid,
+    .partnership-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .allocation-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .allocation-amount {
+        min-width: auto;
+    }
+}
